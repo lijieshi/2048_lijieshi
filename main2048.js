@@ -15,10 +15,10 @@ $(document).ready(function(){
 
 function prepareForMobile(){
 	
-	if(documentWidth>500){
-		gridContainerWidth = 500;
-		cellSpace = 20;
-		cellSideLength = 100;
+	if(documentWidth>625){
+		gridContainerWidth = 625;
+		cellSpace = 25;
+		cellSideLength = 125;
 		}
 	
 	$('#grid-container').css('width',gridContainerWidth - 2*cellSpace);
