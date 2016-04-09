@@ -14,7 +14,7 @@ $(document).ready(function(){
 });
 
 function prepareForMobile(){
-	
+	//我再试试
 	if(documentWidth>625){
 		gridContainerWidth = 625;
 		cellSpace = 25;
