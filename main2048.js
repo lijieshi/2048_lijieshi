@@ -9,17 +9,17 @@ var endx = 0;
 var endy = 0;
 
 $(document).ready(function(){
+	//console.log(documentWidth);
 	prepareForMobile();
     newgame();
 });
 
 function prepareForMobile(){
-	//我再试试
-	if(documentWidth>625){
-		gridContainerWidth = 625;
-		cellSpace = 25;
-		cellSideLength = 125;
-		}
+	if(documentWidth<500){
+		gridContainerWidth = 500;
+		cellSpace = 20;
+		cellSideLength = 100;
+	}
 	
 	$('#grid-container').css('width',gridContainerWidth - 2*cellSpace);
     $('#grid-container').css('height',gridContainerWidth - 2*cellSpace);
