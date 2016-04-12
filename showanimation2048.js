@@ -1,4 +1,3 @@
-// JavaScript Document
 function showNumberWithAnimation( i , j , randNumber ){
 
     var numberCell = $('#number-cell-' + i + "-" + j );
@@ -24,6 +23,6 @@ function showMoveAnimation( fromx , fromy , tox, toy ){
     },200);
 }
 
-function updateScore(score){
-	$('#score').text(score);
-	}
+function updateScore( score ){
+    $('#score').text( score );
+}

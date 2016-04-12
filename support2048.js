@@ -1,15 +1,14 @@
-// JavaScript Document
 documentWidth = window.screen.availWidth;
-gridContainerWidth = 0.92*documentWidth;
-cellSideLength = 0.18*documentWidth;
+gridContainerWidth = 0.92 * documentWidth;
+cellSideLength = 0.18 * documentWidth;
 cellSpace = 0.04*documentWidth;
 
 function getPosTop( i , j ){
-    return cellSpace + i*(cellSpace+cellSideLength);
+    return cellSpace + i*( cellSpace + cellSideLength );
 }
 
 function getPosLeft( i , j ){
-    return cellSpace + j*(cellSpace+cellSideLength);
+    return cellSpace + j*( cellSpace + cellSideLength );
 }
 
 function getNumberBackgroundColor( number ){
@@ -92,7 +91,7 @@ function canMoveDown( board ){
 
     return false;
 }
-	
+
 function noBlockHorizontal( row , col1 , col2 , board ){
     for( var i = col1 + 1 ; i < col2 ; i ++ )
         if( board[row][i] != 0 )
@@ -107,14 +106,13 @@ function noBlockVertical( col , row1 , row2 , board ){
     return true;
 }
 
-function nomove(board){
-	if(canMoveLeft(board)||
-	   canMoveRight(board)||
-	   canMoveUp(board)||
-	   canMoveDown(board)
-	   )
-	return false;
-	
-	return true;
-	
-	}
+function nomove( board ){
+    if( canMoveLeft( board ) ||
+        canMoveRight( board ) ||
+        canMoveUp( board ) ||
+        canMoveDown( board ) )
+        return false;
+
+    return true;
+}
+
